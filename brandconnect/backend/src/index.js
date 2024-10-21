@@ -12,10 +12,10 @@ app.use(express.json()); // For parsing application/json
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: process.env.DB_HOST,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  database: process.env.DB_NAME,
+  host: '127.0.0.1',
+  user: 'drewski',           // Hardcode your username
+  password: 'KJ*&e7Cu?-LM26i', // Hardcode your password
+  database: 'JesseBC',         // Hardcode your database name
 });
 
 console.log('DB_USER:', process.env.DB_USER);
