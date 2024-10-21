@@ -18,6 +18,9 @@ const db = mysql.createConnection({
   database: process.env.DB_NAME,
 });
 
+console.log('DB_USER:', process.env.DB_USER);
+console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
+
 db.connect(err => {
   if (err) {
     console.error('Database connection failed:', err.stack);
